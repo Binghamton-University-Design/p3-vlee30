@@ -1,6 +1,6 @@
 /* javascript */
 
-/* image slider
+/* image slider */
 
 let i = 0; // current slide
 let j = 9; // total slides
@@ -38,7 +38,7 @@ function dot(index){
     indicator(index);
 }
 
-end of image slider */
+
 
 /* kevin's slider
 $(document).ready(function() {
