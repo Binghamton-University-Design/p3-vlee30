@@ -25,10 +25,6 @@ header {
 	padding-right: 50px;
 }
 
-#about {
-
-}
-
 .logo {
 	cursor: pointer;
 	margin-right: auto;
@@ -100,7 +96,7 @@ h1 {
 	font-family: urbane-rounded, sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 70px;
+	font-size: 65px;
 	margin-left: 30px;
 	margin-bottom: 20px;
 }
@@ -111,6 +107,22 @@ p {
 	margin-left: 30px;
 }
 
+h2 {
+	color: #FFBA08;
+	font-family: urbane-rounded, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 50px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	color: white;
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
 
 #hometext {
 	height: auto;
@@ -125,10 +137,6 @@ p {
 
 }
 
-.img1 {
-	height: 700px;
-	width: auto;
-}
 
 .item {
 	margin-bottom: 2em;
@@ -136,9 +144,8 @@ p {
 
 .item img {
 	width: 75%;
-	height: auto;	
+	height: auto;
 }
-
 
 @media (min-width: 776px) {
 	.item img.right-img {
@@ -146,6 +153,217 @@ p {
 		float: right;
 		padding: 0 0 2em 2em;
 	}
+}
+
+#catalog-title {
+	text-align: center;
+	padding-bottom: 0;
+}
+
+#catalog-grid {
+	margin-bottom: 1em;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+
+#catalog-grid .grid-item {
+	color: white;
+	position: relative;
+}
+
+#catalog-grid .grid-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#catalog-grid .grid-item .overlay {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#catalog-grid .grid-item:hover .overlay {
+	opacity: 0.7;
+	transition: all .3s ease-in-out;
+}
+
+#catalog-grid .grid-item .overlay .project-title h3 {
+	margin-bottom: 0;
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+/* image slider
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #FFF3E1;
+    width: 50%;
+    min-width: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow:
+   		-7px -7px 20px 0px #fff9,
+   		-4px -4px 5px 0px #fff9,
+   		7px 7px 20px 0px #0002,
+   		4px 4px 5px 0px #0001,
+   		inset 0px 0px 0px 0px #fff9,
+   		inset 0px 0px 0px 0px #0001,
+   		inset 0px 0px 0px 0px #fff9,        
+   		inset 0px 0px 0px 0px #0001;
+   transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+   border-radius: 20px;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.pic {
+    position: relative;
+    width: auto;
+    min-width: 520px;
+    height: 100%;
+    display: none;
+}
+
+.active {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+#prev,#next{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-color: #FFF3E1;
+    color: #000000;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: bold;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	box-shadow: -7px -7px 20px 0px #fff9,
+	   			-4px -4px 5px 0px #fff9,
+	   			7px 7px 20px 0px #0002,
+	   			4px 4px 5px 0px #0001,
+	   			inset 0px 0px 0px 0px #fff9,
+	   			inset 0px 0px 0px 0px #0001,
+	   			inset 0px 0px 0px 0px #fff9,        
+	   			inset 0px 0px 0px 0px #0001;
+	transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+	text-decoration: none;
+}
+
+#prev:active,#next:active{  
+  	box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              	-4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    			inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    			inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+#prev{
+    left: 15px;
+}
+
+#next{
+    right: 15px;
+}
+
+end of image slider */
+
+
+
+/* Kevin's Slider 
+
+#slider {
+	overflow: hidden;
+	margin-bottom: 2rem;
+}
+
+#slider .prev, #slider .next {
+	position: absolute;
+	z-index: 2;
+	margin: 1rem;
+	font-size: 3em;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
+
+.prev span, .next span {
+	cursor: pointer;
+	display: block;
+	background: #fff;
+}
+
+#slider img {
+	display: block;
+	height: auto;
+	width: 35%;
+}
+
+end of kevin's slider */
+
+#fav-left img {
+	width: 100%;
+	height: auto;
+}
+
+#fav-right img {
+	width: 100%;
+	height: auto;
+}
+
+#fav-left h2 {
+	text-align: center;
+}
+
+#fav-right h2 {
+	text-align: center;
 }
 
 /*for mobile view*/
@@ -183,6 +401,13 @@ p {
 		padding-bottom: 10px;
 	}
 	
+	h2 {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 10px;
+	}
+
 	p{
 		text-align: center;
 	}
