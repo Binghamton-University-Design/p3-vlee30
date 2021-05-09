@@ -217,12 +217,8 @@ h3 {
     width: 50%;
     min-width: 520px;
     position: relative;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    margin-top: 5em;
-    margin-bottom: 3em;
     border-radius: 10px;
+    margin: 3em auto;
     padding: 30px;
     box-shadow:
    		-7px -7px 20px 0px #fff9,
@@ -245,15 +241,13 @@ h3 {
 .pic {
     position: relative;
     width: auto;
-    min-width: 520px;
+    margin: 0 auto;
     height: 100%;
     display: none;
 }
 
 .active {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: block;
 }
 
 
