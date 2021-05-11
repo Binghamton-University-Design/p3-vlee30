@@ -88,12 +88,16 @@ li, a{
 #main {
 	background: #FFF3E1;
 	margin: 20px;
+	margin-left: 120px;
+	margin-right: 120px;
 	padding: 20px;
+
 }
+
 
 h1 {
 	color: #FFBA08;
-	font-family: urbane-rounded, sans-serif;
+	font-family: neue-haas-grotesk-display, sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 65px;
@@ -109,9 +113,9 @@ p {
 
 h2 {
 	color: #FFBA08;
-	font-family: urbane-rounded, sans-serif;
+	font-family: neue-haas-grotesk-display, sans-serif;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 50px;
 	margin-left: 30px;
 	margin-bottom: 20px;
@@ -122,6 +126,8 @@ h3 {
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-style: normal;
 	font-weight: 100;
+	text-align: center;
+	margin: 0;
 }
 
 #hometext {
@@ -301,6 +307,7 @@ button{
 /* end of image slider */
 
 
+
 #fav-left img {
 	width: 100%;
 	height: auto;
@@ -326,7 +333,7 @@ button{
 	}
 
 	#main {
-		margin: 1em;
+		margin: 0em;
 		padding: 0em;
 	}
 
